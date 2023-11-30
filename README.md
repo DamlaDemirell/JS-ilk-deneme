@@ -19,4 +19,12 @@ if (age < 18 ) {
     console.log('you can enter the cafe and  drink alcohol');
 }
 
+// TERNARY OPERATOR 
+var grade= 60;
 
+grade < 45
+? console.log('you can not the exam') 
+: console.log('you can the exam')
+
+var result= grade < 45 ? 'failure' : 'success' ; 
+console.log(result) ; 
