@@ -28,3 +28,40 @@ grade < 45
 
 var result= grade < 45 ? 'failure' : 'success' ; 
 console.log(result) ; 
+
+
+
+//CODE Quiz 3
+/*
+Alex, sara, nancy aynı sınıfta okuyorlar.
+Alex matematik dersinden , 90,80,95 
+Sara 89,76,98 
+Nancy 42, 98,83 puan almışlar. Buna göre ; 
+
+1- her birinin ortalama puanlarını hesaplayıp bir değişkende saklayın. 
+*/
+var gradeAlex = (90 + 80 + 95 ) / 3;
+var gradeSara = (89 + 76 + 98 ) / 3; 
+var gradeNancy = ( 42 + 98 + 83 ) / 3;
+
+console.log('Alex average grade', gradeAlex) ; 
+console.log('Sara average grade' , gradeSara);
+console.log('Nancy average grade' , gradeNancy); 
+
+// Hangisinin Ortalamasının daha yüksek olduğunu bulun ve en yüksek alanı konsola saklayın. 
+/* ortalamaların aynı cıkabileceğini unutmayın. 
+*/
+
+if( gradeAlex > gradeSara && gradeAlex > gradeNancy ) {
+    console.log('Alex has the highest grade' , gradeAlex); 
+}
+else if( gradeSara> gradeAlex && gradeSara> gradeNancy) {
+    console.log('Sara has the highest grade' , gradeSara); 
+}
+else if( gradeNancy > gradeAlex && gradeNancy > gradeSara ) {
+    console.log('Nancy has the highest grade' , gradeNancy); 
+} else{
+console.log('may be there is same average'); 
+}
+
+
